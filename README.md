@@ -93,5 +93,4 @@ GROUP_ID=your_group_id
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details. # TG_Drive
-# TG_Drive
+This project is licensed under the MIT License - see the LICENSE file for details.
