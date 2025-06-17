@@ -1,96 +1,50 @@
-# TG Drive - Telegram Cloud Storage
+# TG Drive: Your Personal Cloud Storage via Telegram
 
-A modern cloud storage solution built with Telegram as the backend storage provider. This project allows users to store and manage their files using Telegram's infrastructure.
+TG Drive transforms Telegram into a powerful, private cloud storage solution. Store, manage, and access your files securely, all powered by Telegram's robust infrastructure.
 
-## Features
+## ✨ Features
 
-- Telegram authentication
-- File upload and management
-- Folder organization
-- File sharing
-- Favorites system
-- Trash management
-- Storage statistics
-- Modern and responsive UI
+- **Seamless Telegram Authentication**: Log in securely using your Telegram account.
+- **Effortless File Management**: Upload, organize in folders, and manage your files with ease.
+- **Smart Organization**: Mark favorites, manage trash, and view storage statistics.
+- **Modern & Intuitive Design**: Enjoy a sleek, responsive user interface.
 
-## Tech Stack
+## 🚀 Quick Setup
 
-### Backend
-- FastAPI
-- SQLAlchemy
-- Pyrogram (Telegram Client)
-- SQLite
+To get TG Drive running, you'll need both the backend and frontend configured. Make sure you have Node.js and Python installed.
 
-### Frontend
-- React
-- Material-UI
-- React Router
-- Axios
-- React Dropzone
+### Backend (Python/FastAPI)
 
-## Setup Instructions
+1.  Navigate to the `backend` directory:
+    ```bash
+    cd backend
+    ```
+2.  Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  Create a `.env` file based on `.env.example` and fill in your Telegram API details and group ID.
 
-### 1. Backend Setup
+4.  Run the backend server:
+    ```bash
+    python main.py
+    ```
 
-```bash
-cd backend
-pip install -r requirements.txt
-python main.py
-```
+### Frontend (React)
 
-### 2. Frontend Setup
+1.  Navigate to the `frontend` directory:
+    ```bash
+    cd frontend
+    ```
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+3.  Start the frontend application:
+    ```bash
+    npm start
+    ```
 
-```bash
-cd frontend
-npm install
-npm start
-```
+## 📄 License
 
-### 3. Telegram Configuration
-
-1. Create a Telegram group named "TG Drive Backup"
-2. Add your bot as admin to the group
-3. Get the group ID and update GROUP_ID in main.py
-4. Set your bot's domain with BotFather: /setdomain yourdomain.com
-5. Update bot username in Login component
-
-### 4. Environment Variables
-
-Create .env file in backend:
-
-```
-API_ID=your_api_id
-API_HASH=your_api_hash
-BOT_TOKEN=your_bot_token
-GROUP_ID=your_group_id
-```
-
-## Project Structure
-
-```
-├── backend/
-│   ├── main.py
-│   ├── models.py
-│   ├── database.py
-│   └── requirements.txt
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── styles/
-│   │   └── App.js
-│   └── package.json
-└── README.md
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a new Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License.
